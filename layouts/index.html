@@ -1,0 +1,27 @@
+{{ define "main" }}
+<header>
+    <h1 class="title">{{ .Site.Title }}: {{ .Site.Params.Subtitle }}</h1>
+</header>
+
+<div>
+    <h2>Tags</h2>
+    {{ range.Site.Taxonomies.tags.ByCount }}
+        <a href="tags/{{ .Name }}">{{ .Name }} ({{ .Count }})</a>&nbsp;
+    {{ end }}
+</div>
+
+<div>
+    <h2>Blog posts</h2>
+    <ul>
+    {{ range where .Site.Pages "Layout" "==" "post"}}
+        <li>
+            {{.Date.Format "2006-01-02"}} <a href="{{.Permalink}}">{{.Title}}</a> 
+            {{ range .Params.tags }}
+                [{{ . }}]
+            {{ end }}
+        </li>
+    {{ end }}
+    </ul>
+</div>
+
+{{ end }}
