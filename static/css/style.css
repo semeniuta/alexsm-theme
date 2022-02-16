@@ -1,0 +1,15 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+pre {
+    padding: 1em;
+    line-height: 1;
+    border-style: solid;
+    background-color: #272822;
+    color: white;
+}
