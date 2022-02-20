@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+<h2>Posts tagged <code>{{ .LinkTitle }}</code></h2>
+
 <ul>
     {{ range .Pages }}
         <li>{{.Date.Format "2006-01-02"}} <a href="{{.Permalink}}">{{.Title}}</a></li>
