@@ -16,4 +16,7 @@
     <div id="page-content">
         {{ .Content }}
     </div>
+    <div id="comments">
+        {{ template "_internal/disqus.html" . }}
+    </div>
 {{ end }}
