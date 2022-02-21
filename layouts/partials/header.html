@@ -1,6 +1,17 @@
 <header>
     <div id="site-header">
-        <h1 class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <h1 class="title">{{ .Site.Title }}</h1>
         <h2>{{ .Site.Params.Subtitle }}</h2>
+
+        <a class="page-link" href="{{ .Site.BaseURL }}">Home</a>
+
+        {{ range where .Site.Pages "Section" "" }}
+            {{ if ne .Permalink .Site.BaseURL }}
+                <a class="page-link" href="{{.Permalink}}">{{.Title}}</a>
+            {{ end }}
+        {{ end }}
+
+        <a class="page-link" href="{{ .Site.BaseURL }}lists">Lists</a>
+
     </div>
 </header>
