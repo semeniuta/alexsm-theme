@@ -2,9 +2,11 @@
 
 <div>
     <h2>Tags</h2>
-    {{ range.Site.Taxonomies.tags.ByCount }}
-        <a href="tags/{{ .Name }}">{{ .Name }} ({{ .Count }})</a>&nbsp;
-    {{ end }}
+    <div id="all-tags">
+        {{ range.Site.Taxonomies.tags.ByCount }}
+            <a href="tags/{{ .Name }}">{{ .Name }} ({{ .Count }})</a>&nbsp;
+        {{ end }}
+    </div>
 </div>
 
 <div>
@@ -12,10 +14,13 @@
     <ul>
     {{ range where .Site.Pages "Layout" "==" "post"}}
         <li>
-            {{.Date.Format "2006-01-02"}} <a href="{{.Permalink}}">{{.Title}}</a> 
-            {{ range .Params.tags }}
-                [{{ . }}]
-            {{ end }}
+            <span class="post-date-on-index">{{.Date.Format "2006-01-02"}}</span>
+            <a href="{{.Permalink}}">{{.Title}}</a> 
+            <span class="post-tags-on-index">
+                {{ range .Params.tags }}
+                    [{{ . }}]
+                {{ end }}
+            </span>
         </li>
     {{ end }}
     </ul>
