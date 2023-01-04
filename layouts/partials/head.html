@@ -5,7 +5,7 @@
     {{ if .Params.math }}{{ partial "helpers/katex.html" . }}{{ end }}
 
     {{ $title := print .Site.Title " | " .Title }}
-    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    {{ if .IsHome }}{{ $title = printf "%s: %s" .Site.Title .Site.Params.Subtitle }}{{ end }}
     <title>{{ $title }}</title>
 
     <meta name="description" content="{{ .Site.Params.Description }}">
