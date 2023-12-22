@@ -1,11 +1,15 @@
 body {
-    max-width: 800px;
-    resize: horizontal;
-    margin: auto;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    padding: 0.5em;
+    margin: 0px;
+}
+
+#content {
+    max-width: 50rem;
+    resize: horizontal;
+    margin: auto;
+    padding: 0rem 1rem;
 }
 
 pre {
@@ -32,7 +36,6 @@ a:hover {
 header {
     background-color: #00B9FB;
     padding: 8px 8px 14px 8px;
-    border-radius: 10px;
 }
 
 header a,
@@ -59,7 +62,6 @@ footer {
     background-color: #12C700;
     color: white;
     padding: 0.5em;
-    border-radius: 10px;
 }
 
 #post-date {
