@@ -36,6 +36,8 @@ a:hover {
 header {
     background-color: #00B9FB;
     padding: 8px 8px 14px 8px;
+    display: flex;
+    align-items: center;
 }
 
 header a,
@@ -53,9 +55,17 @@ header h1 {
 
 header h2 {
     margin-block-start: 0em;
-    margin-block-end: 15px;
+    margin-block-end: 0px;
     color: white;
     line-height: 1.2;
+}
+
+#site-title-and-subtitle {
+    margin-right: 0.5em;
+}
+
+#header-links {
+    display: flex;
 }
 
 footer {
@@ -79,11 +89,17 @@ footer {
 }
 
 .page-link {
+    display: inline-block;
     background-color: blue;
     color: white;
     padding: 8px;
     border-radius: 10px;
-    height: 100%;
+    height: 2em;
+    min-width: 3em;
+    margin-right: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-link:hover {
