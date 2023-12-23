@@ -37,6 +37,12 @@ header {
     background-color: #00B9FB;
     padding: 8px 8px 14px 8px;
     display: flex;
+    justify-content: center;
+}
+
+#header-content {
+    width: 50rem;
+    display: flex;
     align-items: center;
 }
 
