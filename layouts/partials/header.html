@@ -1,23 +1,25 @@
 <header>
-    <a href="{{ .Site.BaseURL }}">
-    <div id="site-title-and-subtitle">
-        <h1 class="title">{{ .Site.Title }}</h1>
-        <h2>{{ .Site.Params.Subtitle }}</h2>
-    </div>
-    </a>
-    <div id="header-links">
-        <a class="page-link" href="{{ .Site.BaseURL }}">Home</a>
-
-        {{ range where .Site.Pages "Section" "" }}
-            {{ if ne .Permalink .Site.BaseURL }}
-                <a class="page-link" href="{{.Permalink}}">{{.Title}}</a>
-            {{ end }}
-        {{ end }}
-
-        <a class="page-link" href="{{ .Site.BaseURL }}lists">Lists</a>
-
-        <a class="page-link" href="{{ .Site.BaseURL }}index.xml">
-            <img src="/images/rss.svg">
+    <div id="header-content">
+        <a href="{{ .Site.BaseURL }}">
+        <div id="site-title-and-subtitle">
+            <h1 class="title">{{ .Site.Title }}</h1>
+            <h2>{{ .Site.Params.Subtitle }}</h2>
+        </div>
         </a>
+        <div id="header-links">
+            <a class="page-link" href="{{ .Site.BaseURL }}">Home</a>
+
+            {{ range where .Site.Pages "Section" "" }}
+                {{ if ne .Permalink .Site.BaseURL }}
+                    <a class="page-link" href="{{.Permalink}}">{{.Title}}</a>
+                {{ end }}
+            {{ end }}
+
+            <a class="page-link" href="{{ .Site.BaseURL }}lists">Lists</a>
+
+            <a class="page-link" href="{{ .Site.BaseURL }}index.xml">
+                <img src="/images/rss.svg">
+            </a>
+        </div>
     </div>
 </header>
