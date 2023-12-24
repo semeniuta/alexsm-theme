@@ -70,6 +70,14 @@ header h2 {
     margin-right: 0.5em;
 }
 
+#site-title-and-subtitle a div:hover h1 {
+    color: blue;
+}
+
+#site-title-and-subtitle a div:hover h2 {
+    color: blue;
+}
+
 #header-links {
     display: flex;
 }
