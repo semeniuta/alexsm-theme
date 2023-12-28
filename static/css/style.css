@@ -128,4 +128,5 @@ footer {
 #all-tags {
     padding: 1em;
     box-shadow: 0 0 20px #00B9FB;
+    border-radius: 10px;
 }
