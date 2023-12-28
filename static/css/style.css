@@ -104,7 +104,6 @@ footer {
 
 .page-link {
     display: inline-block;
-    background-color: blue;
     color: white;
     padding: 8px;
     border-radius: 10px;
@@ -114,10 +113,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .page-link:hover {
-    background-color: #12C700;
+    background-color: blue;
 }
 
 .page-link img {
