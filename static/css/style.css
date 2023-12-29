@@ -30,11 +30,11 @@ a, a:visited {
 }
 
 a:hover {
-    background-color: yellow; 
+    background-color: #E5E5E5;
 }
 
 header {
-    background-color: #00B9FB;
+    background-color: #003566;
     padding: 8px 8px 14px 8px;
     display: flex;
     justify-content: center;
@@ -71,11 +71,11 @@ header h2 {
 }
 
 #site-title-and-subtitle a div:hover h1 {
-    color: blue;
+    color: #fca311;
 }
 
 #site-title-and-subtitle a div:hover h2 {
-    color: blue;
+    color: #fca311;
 }
 
 #header-links {
@@ -83,7 +83,7 @@ header h2 {
 }
 
 footer {
-    background-color: #12C700;
+    background-color: #fca311;
     color: white;
     padding: 0.5em;
 }
@@ -93,13 +93,13 @@ footer {
 }
 
 #post-tags a {
-    background-color: #12C700;
+    background-color: #fca311;
     color: white;
     padding: 2px;
 }
 
 .post-tags-on-index {
-    color: #12C700;
+    color: black;
 }
 
 .page-link {
@@ -118,7 +118,7 @@ footer {
 }
 
 .page-link:hover {
-    background-color: blue;
+    background-color: #fca311;
 }
 
 .page-link img {
@@ -127,6 +127,6 @@ footer {
 
 #all-tags {
     padding: 1em;
-    box-shadow: 0 0 20px #00B9FB;
+    box-shadow: 0 0 20px #e5e5e5;
     border-radius: 10px;
 }
