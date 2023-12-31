@@ -1,11 +1,15 @@
 body {
-    max-width: 800px;
-    resize: horizontal;
-    margin: auto;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    padding: 0.5em;
+    margin: 0px;
+}
+
+#content {
+    max-width: 50rem;
+    resize: horizontal;
+    margin: auto;
+    padding: 0rem 1rem;
 }
 
 pre {
@@ -26,13 +30,20 @@ a, a:visited {
 }
 
 a:hover {
-    background-color: yellow; 
+    background-color: #E5E5E5;
 }
 
 header {
-    background-color: #00B9FB;
+    background-color: #003566;
     padding: 8px 8px 14px 8px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#header-content {
+    width: 50rem;
+    display: flex;
+    align-items: center;
 }
 
 header a,
@@ -50,16 +61,31 @@ header h1 {
 
 header h2 {
     margin-block-start: 0em;
-    margin-block-end: 15px;
+    margin-block-end: 0px;
     color: white;
     line-height: 1.2;
 }
 
+#site-title-and-subtitle {
+    margin-right: 0.5em;
+}
+
+#site-title-and-subtitle a div:hover h1 {
+    color: #fca311;
+}
+
+#site-title-and-subtitle a div:hover h2 {
+    color: #fca311;
+}
+
+#header-links {
+    display: flex;
+}
+
 footer {
-    background-color: #12C700;
+    background-color: #fca311;
     color: white;
     padding: 0.5em;
-    border-radius: 10px;
 }
 
 #post-date {
@@ -67,26 +93,40 @@ footer {
 }
 
 #post-tags a {
-    background-color: #12C700;
+    background-color: #fca311;
     color: white;
     padding: 2px;
 }
 
 .post-tags-on-index {
-    color: #12C700;
+    color: black;
 }
 
 .page-link {
-    background-color: blue;
+    display: inline-block;
     color: white;
     padding: 8px;
     border-radius: 10px;
+    height: 2em;
+    min-width: 3em;
+    margin-right: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .page-link:hover {
-    background-color: #12C700;
+    background-color: #fca311;
 }
 
 .page-link img {
     width: 15px;
+}
+
+#all-tags {
+    padding: 1em;
+    box-shadow: 0 0 20px #e5e5e5;
+    border-radius: 10px;
 }
