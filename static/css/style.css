@@ -46,6 +46,12 @@ header {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    #header-content {
+        padding-left: 1rem;
+    }
+}
+
 header a,
 header a:visited {
     color: white;
