@@ -11,6 +11,8 @@ body {
     resize: horizontal;
     margin: auto;
     padding: 0rem 1rem;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
 }
 
 pre {
