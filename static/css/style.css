@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin: 0px;
-    background-color: #fefae0;
+    background-color: #fbfbff;
 }
 
 #content {
@@ -29,7 +29,7 @@ pre a {
 }
 
 a, a:visited {
-    color: #00296b;
+    color: #072ac8;
 }
 
 a:hover {
@@ -37,7 +37,7 @@ a:hover {
 }
 
 header {
-    background-color: #540d6e;
+    background-color: #072ac8;
     padding: 8px 8px 14px 8px;
     display: flex;
     justify-content: center;
