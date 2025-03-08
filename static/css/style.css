@@ -109,8 +109,19 @@ footer {
     padding: 2px;
 }
 
-.post-tags-on-index {
-    color: black;
+.tag-on-index {
+    background-color: #6c757d;
+    color: white;
+    padding: 2px;
+}
+
+.post-link-on-index a {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.post-date-on-index {
+    color: #6c757d;
 }
 
 .page-link {
@@ -141,4 +152,14 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 10px;
     background-color: white;
+}
+
+.post-box {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    background-color: white;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: #6c757d;
 }
