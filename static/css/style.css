@@ -35,7 +35,7 @@ a:hover {
 }
 
 header {
-    background-color: #003566;
+    background-color: #5a189a;
     padding: 8px 8px 14px 8px;
     display: flex;
     justify-content: center;
@@ -162,5 +162,5 @@ footer {
 .post-box {
     padding: 1em;
     margin-bottom: 1em;
-    border-left: 5px #fca311 solid;
+    border-left: 5px #70e000 solid;
 }
