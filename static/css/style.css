@@ -27,7 +27,7 @@ pre a {
 }
 
 a, a:visited {
-    color: #003566;
+    color: #072AC8;
 }
 
 a:hover {
@@ -109,14 +109,14 @@ footer {
 }
 
 .tag-on-index {
-    background-color: #6c757d;
+    background-color: #1E96FC;
     color: white;
     padding: 2px;
 }
 
 .post-link-on-index a {
     font-size: 20px;
-    color: #003566;
+    color: #072AC8;
     text-decoration: none;
 }
 
