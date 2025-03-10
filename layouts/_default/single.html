@@ -8,7 +8,7 @@
             <span id="post-date">{{ .Date.Format "January 2, 2006" }}</span>&nbsp
             <span id="post-tags">
                 {{ range .Params.tags }}
-                    <a href="{{ $.Site.BaseURL }}tags/{{ . }}">[{{ . }}]</a>&nbsp;
+                    <a href="{{ $.Site.BaseURL }}tags/{{ . }}">{{ . }}</a>&nbsp;
                 {{ end }}
             </span>
         {{ end }}
