@@ -164,4 +164,7 @@ footer {
     padding: 1em;
     margin-bottom: 1em;
     border-left: 5px #70e000 solid;
+    border-top: 1px gray dashed;
+    border-bottom: 1px gray dashed;
+    border-right: 1px gray dashed;
 }
