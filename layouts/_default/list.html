@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-{{ if eq .Section "lists" }}
-    <h2>Lists</h2>
+{{ if eq .Section "collection" }}
+    <h2>Collections</h2>
 {{ else }}
     <h2>Posts tagged <code>{{ .LinkTitle }}</code></h2>
 {{ end }}
@@ -9,7 +9,7 @@
 <ul>
     {{ range .Pages }}
         <li>
-            {{ if eq .Section "post" }}
+            {{ if eq .Section "blog" }}
                 {{.Date.Format "2006-01-02"}}
             {{ end }}
             <a href="{{.Permalink}}">{{.Title}}</a>
