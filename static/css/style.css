@@ -121,7 +121,7 @@ footer {
 }
 
 .post-date-on-index {
-    color: #006400;
+    color: #6c757d;
 }
 
 .page-link {
@@ -162,5 +162,4 @@ footer {
     padding: 1em;
     margin-bottom: 1em;
     border-left: 5px #70e000 solid;
-    background-image: linear-gradient(#70e000, #fbfbff);
 }
