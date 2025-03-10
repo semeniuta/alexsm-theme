@@ -27,7 +27,7 @@ pre a {
 }
 
 a, a:visited {
-    color: #072AC8;
+    color: blue;
 }
 
 a:hover {
@@ -155,8 +155,7 @@ footer {
 }
 
 #all-tags a {
-    color: black;
-    text-decoration: none;
+    color: blue;
 }
 
 .post-box {
