@@ -163,8 +163,7 @@ footer {
 .post-box {
     padding: 1em;
     margin-bottom: 1em;
-    border-left: 5px #70e000 solid;
-    border-top: 1px gray dashed;
-    border-bottom: 1px gray dashed;
-    border-right: 1px gray dashed;
+    border: 2px rgb(211, 211, 211) solid;
+    background-color: white;
+    border-radius: 10px;
 }
