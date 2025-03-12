@@ -1,0 +1,16 @@
+<div id="posts">
+{{ range where .Site.Pages "Layout" "==" "post"}}
+    <div class="post-box">
+        <div class="post-date-on-index">{{.Date.Format "January 2, 2006"}}</div>
+        <div class="post-link-on-index"><a href="{{.Permalink}}">{{.Title}}</a></div>
+        <div>
+            {{.Summary}}
+        </div>
+        <div class="post-tags-on-index">
+            {{ range .Params.tags }}
+                <span class="tag-on-index">{{ . }}</span>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
+</div>
