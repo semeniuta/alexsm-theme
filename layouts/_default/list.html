@@ -6,14 +6,6 @@
     <h2>Posts tagged <code>{{ .LinkTitle }}</code></h2>
 {{ end }}
 
-<ul>
-    {{ range .Pages }}
-        <li>
-            {{ if eq .Section "blog" }}
-                {{.Date.Format "2006-01-02"}}
-            {{ end }}
-            <a href="{{.Permalink}}">{{.Title}}</a>
-        </li>
-    {{ end }}
-</ul>
+{{ partial "post-list.html" (dict "posts" (where .Pages "Section" "blog")) }}
+
 {{ end }}

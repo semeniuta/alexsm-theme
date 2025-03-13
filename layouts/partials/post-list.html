@@ -1,6 +1,5 @@
 <div id="posts">
-{{- $posts := .posts -}}
-{{ range $posts }}
+{{ range .posts }}
     <div class="post-box">
         <div class="post-date-on-index">{{.Date.Format "January 2, 2006"}}</div>
         <div class="post-link-on-index"><a href="{{.Permalink}}">{{.Title}}</a></div>
