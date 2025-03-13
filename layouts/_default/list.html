@@ -6,6 +6,6 @@
     <h2>Posts tagged <code>{{ .LinkTitle }}</code></h2>
 {{ end }}
 
-{{ partial "post-list.html" (dict "posts" (where .Pages "Section" "blog")) }}
+{{ partial "post-list.html" (dict "posts" .Pages) }}
 
 {{ end }}

@@ -1,16 +1,20 @@
 <div id="posts">
 {{ range .posts }}
     <div class="post-box">
+    {{ if eq .Section "blog" }}
         <div class="post-date-on-index">{{.Date.Format "January 2, 2006"}}</div>
+    {{ end }}
         <div class="post-link-on-index"><a href="{{.Permalink}}">{{.Title}}</a></div>
         <div>
             {{.Summary}}
         </div>
+    {{ if .Params.tags }}
         <div class="post-tags-on-index">
-            {{ range .Params.tags }}
-                <span class="tag-on-index">{{ . }}</span>
-            {{ end }}
+        {{ range .Params.tags }}
+            <span class="tag-on-index">{{ . }}</span>
+        {{ end }}
         </div>
+    {{ end }}
     </div>
 {{ end }}
 </div>
