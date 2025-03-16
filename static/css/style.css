@@ -4,11 +4,16 @@ body {
     line-height: 1.6;
     margin: 0px;
     background-color: #fbfbff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #content {
+    flex: 1;
+    width: 100%;
     max-width: 50rem;
-    resize: horizontal;
+    align-self: flex-start;
     margin: auto;
     padding: 0rem 1rem;
 }
