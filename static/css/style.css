@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
 }
 
-#content {
+main {
     flex: 1;
     width: 100%;
     max-width: 50rem;
@@ -114,20 +114,20 @@ footer {
     padding: 2px;
 }
 
-.tag-on-index {
+.content-element-tag {
     background-color: #1E96FC;
     color: white;
     padding: 2px;
 }
 
-.post-link-on-index a {
+.content-element-link a {
     font-size: larger;
     font-weight: bolder;
     color: black;
     text-decoration: none;
 }
 
-.post-date-on-index {
+.content-element-date {
     color: #6c757d;
 }
 
@@ -165,7 +165,7 @@ footer {
     color: blue;
 }
 
-.post-box {
+.content-element {
     padding: 1em;
     margin-bottom: 1em;
     border: 2px rgb(211, 211, 211) solid;
