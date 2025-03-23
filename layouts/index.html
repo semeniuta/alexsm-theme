@@ -11,19 +11,7 @@
 
 <div>
     <h2>Blog posts</h2>
-    <ul>
-    {{ range where .Site.Pages "Layout" "==" "post"}}
-        <li>
-            <span class="post-date-on-index">{{.Date.Format "2006-01-02"}}</span>
-            <a href="{{.Permalink}}">{{.Title}}</a> 
-            <span class="post-tags-on-index">
-                {{ range .Params.tags }}
-                    [{{ . }}]
-                {{ end }}
-            </span>
-        </li>
-    {{ end }}
-    </ul>
+    {{ partial "post-list.html" (dict "posts" (where .Site.Pages "Layout" "==" "post")) }}
 </div>
 
 {{ end }}

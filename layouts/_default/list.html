@@ -1,19 +1,11 @@
 {{ define "main" }}
 
-{{ if eq .Section "lists" }}
-    <h2>Lists</h2>
+{{ if eq .Section "collection" }}
+    <h1>Collections</h1>
 {{ else }}
-    <h2>Posts tagged <code>{{ .LinkTitle }}</code></h2>
+    <h1>Posts tagged <code>{{ .Title | lower }}</code></h1>
 {{ end }}
 
-<ul>
-    {{ range .Pages }}
-        <li>
-            {{ if eq .Section "post" }}
-                {{.Date.Format "2006-01-02"}}
-            {{ end }}
-            <a href="{{.Permalink}}">{{.Title}}</a>
-        </li>
-    {{ end }}
-</ul>
+{{ partial "post-list.html" (dict "posts" .Pages) }}
+
 {{ end }}

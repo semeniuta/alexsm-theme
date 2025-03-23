@@ -8,6 +8,11 @@
     {{ if .IsHome }}{{ $title = printf "%s: %s" .Site.Title .Site.Params.Subtitle }}{{ end }}
     <title>{{ $title }}</title>
 
+    {{ if eq .RelPermalink "/" }}
     <meta name="description" content="{{ .Site.Params.Description }}">
+    {{ else }}
+    <meta name="description" content="{{ .Summary }}">
+    {{ end }}
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>

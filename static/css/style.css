@@ -3,11 +3,17 @@ body {
     font-size: 14px;
     line-height: 1.6;
     margin: 0px;
+    background-color: #fbfbff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-#content {
+main {
+    flex: 1;
+    width: 100%;
     max-width: 50rem;
-    resize: horizontal;
+    align-self: flex-start;
     margin: auto;
     padding: 0rem 1rem;
 }
@@ -38,12 +44,14 @@ header {
     padding: 8px 8px 14px 8px;
     display: flex;
     justify-content: center;
+    box-shadow: 0 5px 8px 1px rgba(41,41,41,.25);
 }
 
 #header-content {
     width: 50rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
@@ -70,6 +78,7 @@ header h2 {
     margin-block-end: 0px;
     color: white;
     line-height: 1.2;
+    font-size: 1.2em;
 }
 
 #site-title-and-subtitle {
@@ -99,13 +108,27 @@ footer {
 }
 
 #post-tags a {
-    background-color: #fca311;
+    background-color: #1E96FC;
+    text-decoration: none;
     color: white;
     padding: 2px;
 }
 
-.post-tags-on-index {
+.content-element-tag {
+    background-color: #1E96FC;
+    color: white;
+    padding: 2px;
+}
+
+.content-element-link a {
+    font-size: larger;
+    font-weight: bolder;
     color: black;
+    text-decoration: none;
+}
+
+.content-element-date {
+    color: #6c757d;
 }
 
 .page-link {
@@ -134,5 +157,18 @@ footer {
 #all-tags {
     padding: 1em;
     box-shadow: 0 0 20px #e5e5e5;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#all-tags a {
+    color: blue;
+}
+
+.content-element {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 2px rgb(211, 211, 211) solid;
+    background-color: white;
     border-radius: 10px;
 }
