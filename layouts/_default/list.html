@@ -1,9 +1,9 @@
 {{ define "main" }}
 
 {{ if eq .Section "collection" }}
-    <h2>Collections</h2>
+    <h1>Collections</h1>
 {{ else }}
-    <h2>Posts tagged <code>{{ .Title | lower }}</code></h2>
+    <h1>Posts tagged <code>{{ .Title | lower }}</code></h1>
 {{ end }}
 
 {{ partial "post-list.html" (dict "posts" .Pages) }}
