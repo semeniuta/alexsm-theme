@@ -16,9 +16,4 @@
     <div id="page-content">
         {{ .Content }}
     </div>
-    <div id="comments">
-        {{ if $.Params.comments }}
-            {{ template "_internal/disqus.html" . }}
-        {{ end }}
-    </div>
 {{ end }}
