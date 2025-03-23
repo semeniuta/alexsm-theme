@@ -3,7 +3,7 @@
 {{ if eq .Section "collection" }}
     <h2>Collections</h2>
 {{ else }}
-    <h2>Posts tagged <code>{{ .LinkTitle }}</code></h2>
+    <h2>Posts tagged <code>{{ .Title | lower }}</code></h2>
 {{ end }}
 
 {{ partial "post-list.html" (dict "posts" .Pages) }}
