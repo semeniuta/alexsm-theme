@@ -13,9 +13,9 @@ main {
     flex: 1;
     width: 100%;
     max-width: 50rem;
-    align-self: flex-start;
     margin: auto;
     padding: 0rem 1rem;
+    box-sizing: border-box;
 }
 
 pre {
@@ -48,15 +48,20 @@ header {
 }
 
 #header-content {
-    width: 50rem;
+    width: 100%;
+    max-width: 50rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #header-content {
-        padding-left: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 }
 
